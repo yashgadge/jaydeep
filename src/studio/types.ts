@@ -1,0 +1,8 @@
+export type Role={owner:boolean;[key:string]:boolean};
+export type RecordData={id:string;[key:string]:any};
+export type Service=RecordData&{title:string;description:string;flow:string;icon:string;pricePaise:number;advancePaise:number;crewUnits:number;published:boolean;inclusions:string;deliveryEstimate:string;occasions:string[];addOns:Array<{name:string;pricePaise:number}>};
+export type Order=RecordData&{publicId:string;clientUid:string;client:{name:string;email:string;phone?:string;address?:string};title:string;shootDate:string;slot:string;status:string;paymentMode:string;billedTotalPaise:number;paidPaise:number;assignees:string[];delivery:{photos:string;videos:string}};
+export type Product=RecordData&{title:string;description:string;kind:string;unitPricePaise:number;minimumQuantity:number;maximumQuantity:number;published:boolean;quoteOnly:boolean;sortOrder:number};
+export type Workspace={client:RecordData;role:Role|null;settings:Record<string,any>;orders:Order[];upcomingOrders?:Order[];availableOrders?:Order[];services:Service[];products?:Product[];documents:RecordData[];enquiries:RecordData[];members:RecordData[];cursor:string|null};
+export const permissionNames:Record<string,string>={ordersManage:'Orders & custom bookings',calendarManage:'Calendar & date blocks',servicesManage:'Services, packages & prices',deliveriesManage:'Deliveries',tasksManage:'On the go & content tasks',contactsManage:'Client contacts',whatsappSend:'WhatsApp messages',clientsExport:'Client Excel exports',paymentsManage:'Payments & refunds',invoiceManage:'Invoices & billing settings',contentManage:'Public website content'};
+export const today=()=>new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Kolkata',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());

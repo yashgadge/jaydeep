@@ -1,0 +1,76 @@
+.managed-brands{position:relative;isolation:isolate;padding:75px clamp(22px,5vw,86px);background:#08070a;scroll-margin-top:130px;border-bottom:1px solid #ffffff10;overflow:hidden}
+.managed-brands:before{content:'';position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 20% 55%,#63182a38,transparent 65%)}
+.managed-brands>header{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;max-width:1400px;margin:0 auto 20px}
+.managed-brands h2{font:clamp(44px,5vw,76px)/.98 'Bebas Neue',sans-serif;margin:0;color:#f4f1ec}.managed-brands h2 em{font:italic clamp(44px,5vw,76px)/1.05 'Instrument Serif',serif;color:#e95774}
+.managed-brands header>p{font:14px/1.9 Inter,sans-serif;color:#b99da9;margin:0}
+.managed-brand-links{display:flex;flex-wrap:wrap;gap:15px;margin-top:20px}.managed-brand-links a{display:flex;align-items:center;gap:8px;border-bottom:1px solid #cc718a66;padding:10px 0;font:14px/1.6 Inter,sans-serif;color:#f0c1d0;overflow-wrap:anywhere;min-width:0}.managed-brand-links a svg{width:18px;height:18px;flex-shrink:0}.managed-brand-links a>span{color:#e95f81}
+.managed-brand-statistics{display:flex;flex-wrap:wrap;gap:25px}.managed-brand-statistics>div{display:flex;flex-direction:column;gap:6px}.managed-brand-statistics strong{font:400 35px/1 'Bebas Neue',sans-serif;color:#f4dde6}.managed-brand-statistics span{font:14px/1.5 Inter,sans-serif;color:#d99ab0}.managed-brand-statistics small{font:12px/1.6 Inter,sans-serif;color:#a48294}
+.managed-brands-load{display:block;min-height:44px;margin:20px auto 0;border:1px solid #ae5e7655;border-radius:8px;padding:10px 20px;background:#ffffff04;color:#efc2d1;font:14px/1.5 Inter,sans-serif;cursor:pointer}
+.managed-brands-invite{max-width:1400px;margin:auto;border:1px solid #8a405836;border-radius:18px;min-height:230px;padding:35px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(ellipse,#56172a35,transparent 70%)}.managed-brands-invite>span{color:#e97795;font-size:30px}.managed-brands-invite p{font:italic clamp(27px,3vw,40px) 'Instrument Serif',serif;color:#ead7df}.managed-brands-invite a{padding:12px 0;border-bottom:1px solid #b4597566;font:14px Inter,sans-serif;color:#e8b5c7}
+.managed-brands :focus-visible{outline:2px solid #ed8ca9;outline-offset:4px}
+@media(max-width:760px){.managed-brands{padding-block:38px}.managed-brands>header{display:block;margin-bottom:20px}.managed-brands header>p{margin-top:18px;font-size:14px}.managed-brands-invite{padding:25px;min-height:210px}}
+@media(prefers-reduced-motion:reduce){.managed-brands *{transition:none!important;scroll-behavior:auto!important}}
+
+.managed-brand-bounce-showcase{max-width:1080px;margin:auto}
+.managed-brand-bounce-stage{position:relative;max-width:1000px;margin:0 auto;isolation:isolate;touch-action:pan-y}
+.managed-brand-bounce-stage .bounce-cards{margin:auto}
+.managed-brand-bounce-orbit{position:absolute;inset:18% 8%;z-index:-1;border:1px solid #d15c7d20;border-radius:50%;transform:rotate(-7deg);background:radial-gradient(ellipse,#a32c4f21,transparent 70%);box-shadow:0 0 0 28px #dc678107,0 0 0 55px #dc678104;pointer-events:none}
+.managed-brand-bounce-controls{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 22px;padding:0 4px;color:#c5a1b1}
+.managed-brand-bounce-controls>p{font:500 14px/1.6 Inter,sans-serif;margin:0}.managed-brand-bounce-controls>p span{color:#9e7c8e}
+.managed-brand-bounce-controls>div{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.managed-brand-bounce-controls>div>span{font:500 14px/1.5 Inter,sans-serif;min-width:40px;text-align:center;font-variant-numeric:tabular-nums}
+.managed-brands .managed-brand-bounce-controls button{display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid #bd5d7b66;border-radius:50%;background:#a2335012;color:#f0c1d0;font:22px/1 Inter,sans-serif;cursor:pointer;transition:background .25s,transform .25s}
+.managed-brand-bounce-controls button:hover{background:#a2335038;transform:translateY(-2px)}.managed-brand-bounce-controls button:disabled{opacity:.35;cursor:default;transform:none}
+.managed-brand-detail-anchor{min-height:240px}
+.managed-brand-bounce-detail{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;padding:30px 34px;border:1px solid #ba5c793b;border-radius:18px;background:linear-gradient(135deg,#24101d99,#100c1399);box-shadow:inset 0 1px 0 #ffffff05;align-items:center}
+.managed-brand-bounce-copy{min-width:0}
+.managed-brands .managed-brand-bounce-detail .managed-brand-label{font:500 12px/1.6 Inter,sans-serif;letter-spacing:.16em;color:#d78ca4;margin:0 0 13px}
+.managed-brands .managed-brand-bounce-detail h3{font:400 clamp(32px,3.3vw,48px)/1.05 'Bebas Neue',sans-serif;color:#f4e8eb;margin:0 0 13px;overflow-wrap:anywhere}
+.managed-brands .managed-brand-bounce-detail .managed-brand-description{font:400 16px/1.75 Inter,sans-serif;color:#c4abba;margin:0;white-space:pre-line;overflow-wrap:anywhere}
+.managed-brand-bounce-detail .managed-brand-links{margin-top:15px;gap:12px 22px}
+.managed-brands .managed-brand-bounce-detail .managed-brand-links a{font:500 14px/1.6 Inter,sans-serif;gap:8px;max-width:100%;text-decoration:none}
+.managed-brand-links .managed-brand-handle{min-width:0;overflow-wrap:anywhere;color:inherit}
+.managed-brands .managed-brand-bounce-detail .managed-brand-statistics{margin:0;padding:8px 0 8px 30px;border-top:0;border-left:1px solid #cc718a30;gap:22px;flex-direction:column;max-width:230px}
+.managed-brand-bounce-detail .managed-brand-statistics strong{font-size:43px}.managed-brand-bounce-detail .managed-brand-statistics span{font-size:14px}.managed-brand-bounce-detail .managed-brand-statistics small{font-size:12px;line-height:1.65}
+@media(max-width:760px){.managed-brands-bounce>header{margin-bottom:6px}.managed-brand-bounce-detail{padding:23px;gap:23px}.managed-brand-bounce-controls>p span{display:block}.managed-brand-bounce-controls{margin-bottom:18px}.managed-brands .managed-brand-bounce-detail .managed-brand-statistics{padding-left:22px;max-width:180px}}
+@media(max-width:520px){.managed-brand-bounce-detail{grid-template-columns:1fr;gap:18px;padding:21px}.managed-brand-detail-anchor{min-height:290px}.managed-brands .managed-brand-bounce-detail .managed-brand-statistics{flex-direction:row;max-width:none;border-left:0;border-top:1px solid #cc718a30;padding:18px 0 0;gap:24px}.managed-brand-bounce-detail .managed-brand-statistics strong{font-size:35px}.managed-brands .managed-brand-bounce-detail h3{font-size:34px}.managed-brand-bounce-controls{gap:10px}.managed-brand-bounce-controls>div{gap:10px}.managed-brand-bounce-controls>p{font-size:13px}.managed-brands .managed-brand-bounce-detail .managed-brand-links a{font-size:13px}}
+
+.managed-brand-rail-frame{position:relative;margin:26px -6px 10px}
+.managed-brand-rail-frame:before,.managed-brand-rail-frame:after{content:'';position:absolute;top:0;bottom:0;width:22px;z-index:3;pointer-events:none;background:linear-gradient(90deg,#08070a,transparent)}
+.managed-brand-rail-frame:before{left:0}.managed-brand-rail-frame:after{right:0;transform:rotate(180deg)}
+.managed-brands .managed-brand-logo-rail{--brand-card-width:160px;position:relative;display:flex;align-items:stretch;gap:20px;max-width:none;box-sizing:border-box;padding:12px 8px 14px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x proximity;overscroll-behavior-x:contain;touch-action:pan-x pan-y;scrollbar-width:none;isolation:auto}
+.managed-brand-logo-rail::-webkit-scrollbar{display:none}
+.managed-brands .managed-brand-logo-card{position:relative;display:flex;flex:0 0 var(--brand-card-width);flex-direction:column;align-items:center;gap:13px;min-width:0;scroll-snap-align:center;box-sizing:border-box;padding:14px 12px 20px;border:1px solid #c6859c22;border-radius:20px;background:linear-gradient(145deg,#2b1b2759,#100d1459);color:#b49eac;cursor:pointer;transition:border-color .35s,background .35s,box-shadow .35s}
+.managed-brand-logo-card[aria-pressed=true]{border-color:#d883a077;background:linear-gradient(145deg,#48223670,#1b111c99);box-shadow:inset 0 1px 0 #ffffff09,0 8px 24px #0002}
+.managed-brand-logo-mat{display:grid;place-items:center;width:100%;aspect-ratio:1;overflow:hidden;box-sizing:border-box;padding:10px;border-radius:13px;background:#f6f3ef;box-shadow:0 4px 14px #0003;transition:transform .4s cubic-bezier(.22,1,.36,1)}
+.managed-brand-logo-card[aria-pressed=true] .managed-brand-logo-mat{transform:translateY(-2px)}
+.managed-brand-logo-mat img{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none}.managed-brand-logo-mat.is-image{padding:0}.managed-brand-logo-mat.is-image img{object-fit:cover}.managed-brand-logo-mat>b{font:50px 'Bebas Neue',sans-serif;color:#a73355}
+.managed-brand-logo-name{font:500 13px/1.5 Inter,sans-serif;min-height:39px;max-width:100%;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-align:center}
+.managed-brand-logo-card[aria-pressed=true] .managed-brand-logo-name{color:#f1dce5}
+.managed-brand-logo-indicator{position:absolute;bottom:9px;width:18px;height:2px;border-radius:2px;background:#e18aa7;opacity:0;transform:scaleX(.3);transition:transform .35s,opacity .35s}.managed-brand-logo-card[aria-pressed=true] .managed-brand-logo-indicator{opacity:1;transform:scaleX(1)}
+.managed-brand-detail-anchor{position:relative;min-height:250px}
+.managed-brand-bounce-detail{min-height:250px;box-sizing:border-box;border-radius:16px;background:linear-gradient(135deg,#23131d66,#0c0b1166);border-color:#bc829b2b}
+.managed-brand-bounce-controls{margin:0 0 18px;padding:0 6px}.managed-brand-bounce-controls>p{font-size:14px;color:#d0b5c2}
+@media(max-width:760px){.managed-brands .managed-brand-logo-rail{--brand-card-width:140px;gap:14px}.managed-brands .managed-brand-logo-card{border-radius:17px;padding:12px 10px 20px}.managed-brand-rail-frame{margin-top:16px}.managed-brand-bounce-detail{padding:24px}.managed-brand-bounce-controls>p span{display:inline}}
+@media(max-width:420px){.managed-brands .managed-brand-logo-rail{--brand-card-width:120px;gap:12px}.managed-brand-logo-name{font-size:12px;min-height:36px}.managed-brand-logo-mat{padding:7px;border-radius:10px}.managed-brand-bounce-controls>p span{display:block}.managed-brand-bounce-detail{min-height:290px}.managed-brand-detail-anchor{min-height:290px}}
+
+
+.managed-brand-entry-line{height:1px;width:100%;max-width:1080px;margin:0 auto 30px;transform-origin:50% 50%;background:linear-gradient(90deg,transparent,#bd365f 25%,#efb1c6 50%,#bd365f 75%,transparent);box-shadow:0 0 12px #d44f7733;pointer-events:none}
+@media(max-width:760px){.managed-brand-entry-line{margin-bottom:24px}}
+
+/* The rail and its live account information form one connected panel. */
+.managed-brands .managed-brand-unified{padding:22px;box-sizing:border-box;border:1px solid #d18ba32e;border-radius:20px;background:#100d13;overflow:hidden}
+.managed-brand-unified .managed-brand-bounce-controls{margin:0 0 10px;padding:0 3px}
+.managed-brand-unified .managed-brand-bounce-controls>p{font:500 14px/1.5 Inter,sans-serif;color:#d3bbc6}
+.managed-brand-unified .managed-brand-rail-frame{margin:0}
+.managed-brand-unified .managed-brand-rail-frame:before,.managed-brand-unified .managed-brand-rail-frame:after{display:none}
+.managed-brand-unified .managed-brand-logo-rail{scroll-padding-inline:8px;scroll-snap-type:none}
+.managed-brand-unified .managed-brand-detail-anchor{margin-top:8px;padding-top:22px;border-top:1px solid #d18ba32e;min-height:220px}
+.managed-brand-unified .managed-brand-bounce-detail{padding:0 3px 4px;min-height:220px;background:none;border:0;border-radius:0;box-shadow:none;gap:24px}
+.managed-brand-unified .managed-brand-selected-heading{display:flex;align-items:center;gap:16px;margin-bottom:15px}
+.managed-brand-unified .managed-brand-selected-logo{width:56px;height:56px;flex:0 0 56px;object-fit:contain;padding:5px;box-sizing:border-box;background:#f4f1ed;border-radius:11px}
+.managed-brands .managed-brand-unified .managed-brand-selected-heading h3{margin:0;font-size:clamp(29px,3vw,42px);line-height:1.08}
+.managed-brands .managed-brand-unified .managed-brand-label{font-size:12px;margin-bottom:13px;color:#e29bb3}
+.managed-brands .managed-brand-unified .managed-brand-statistics{max-width:190px;padding-left:22px}
+@media(max-width:760px){.managed-brands .managed-brand-unified{padding:17px}.managed-brand-unified .managed-brand-detail-anchor{padding-top:19px}.managed-brand-unified .managed-brand-bounce-detail{gap:18px}}
+@media(max-width:520px){.managed-brands .managed-brand-unified{padding:14px}.managed-brand-unified .managed-brand-detail-anchor,.managed-brand-unified .managed-brand-bounce-detail{min-height:240px}.managed-brand-unified .managed-brand-selected-heading{gap:12px}.managed-brand-unified .managed-brand-selected-logo{width:46px;height:46px;flex-basis:46px}.managed-brands .managed-brand-unified .managed-brand-statistics{padding:16px 0 0;max-width:none}}

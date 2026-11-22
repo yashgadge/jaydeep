@@ -1,0 +1,23 @@
+node_modules
+.npm-cache
+.firebase
+firebase-debug.log*
+functions/.env*
+dist
+.DS_Store
+*.local
+/.claude
+
+.tools/
+
+# Private/local backup material
+.env*
+output/
+.playwright-cli/
+*.log
+*.tsbuildinfo
+*.pem
+*.key
+.aws/
+.codex/
+.agents/

@@ -1,0 +1,7 @@
+(async()=>{
+ const response=await fetch('https://firestore.googleapis.com/v1/projects/m-v-ml/databases/(default)/documents:runQuery',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({structuredQuery:{from:[{collectionId:'publicContent'}],where:{compositeFilter:{op:'AND',filters:[{fieldFilter:{field:{fieldPath:'published'},op:'EQUAL',value:{booleanValue:true}}},{fieldFilter:{field:{fieldPath:'kind'},op:'EQUAL',value:{stringValue:'portfolio'}}}]}},orderBy:[{field:{fieldPath:'sortOrder'},direction:'ASCENDING'},{field:{fieldPath:'__name__'},direction:'ASCENDING'}],limit:24}})});
+ if(!response.ok)throw new Error('Public reels query failed');
+ const docs=(await response.json()).filter(row=>row.document).map(row=>row.document.fields);let native=0;const checks=[];
+ for(const f of docs){const url=f.videoUrl?.stringValue;if(!url)continue;const r=await fetch(url,{headers:{Range:'bytes=0-1023'}});const b=Buffer.from(await r.arrayBuffer());if(r.status!==206||!r.headers.get('content-type')?.startsWith('video/mp4')||b.toString('ascii',4,8)!=='ftyp')throw new Error('Invalid native reel media response: '+f.title.stringValue);native++;checks.push({title:f.title.stringValue,status:r.status,type:r.headers.get('content-type'),range:r.headers.get('content-range')});}
+ if(native!==7)throw new Error('Expected all seven current reels to have native video sources');console.log(JSON.stringify({nativeReels:native,checks},null,2));
+})().catch(e=>{console.error(e.message);process.exitCode=1;});

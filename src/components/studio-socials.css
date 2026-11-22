@@ -1,0 +1,53 @@
+/* Explicit Instagram actions: visible labels, handles, and comfortable tap areas. */
+.studio-instagram-link .studio-instagram-icon{display:grid;place-items:center;width:28px;height:28px;flex:0 0 28px;border-radius:50%;background:linear-gradient(140deg,#a71f3d,#d34862);box-shadow:0 2px 12px #c12d4430}
+.studio-instagram-link .studio-instagram-icon svg{width:16px;height:16px;color:#fff;opacity:1}
+.agency-header .agency-header-actions .studio-instagram-link{width:auto;max-width:100%;height:42px;min-height:42px;display:inline-flex;align-items:center;gap:9px;padding:6px 11px 6px 6px!important;border:1px solid #d6557280;border-radius:100px;background:#45142180!important;box-shadow:inset 0 1px 0 #ffffff0a,0 3px 14px #b3203c12;transition:border-color .3s,background .3s,transform .3s}
+.studio-instagram-link .studio-instagram-handle{font:550 9px/1.3 Inter,sans-serif;letter-spacing:.025em;color:#f5dce4;white-space:nowrap}
+.studio-instagram-link .studio-instagram-arrow{font:16px/1 Inter,sans-serif;color:#ee9aaf;margin-left:2px;transition:transform .3s}
+.agency-header .agency-header-actions .studio-instagram-link:hover{border-color:#ef839e;background:#672137a6!important;transform:translateY(-1px)}
+.studio-instagram-link:hover .studio-instagram-arrow{transform:translate(1px,-1px)}
+.agency-root .partner-signatures,.studio-opening .partner-signatures,.partner-signatures .partner-signature-wrap{gap:16px}
+.partner-signatures .partner-instagram-link{display:flex;flex-direction:row;align-items:center;gap:11px;min-height:61px;padding:10px 14px;border:1px solid #db80965e;border-radius:14px;background:#100a12a6;backdrop-filter:blur(8px);color:#f9e9ee;box-shadow:0 4px 18px #0002;transition:transform .3s,border-color .3s,background .3s,box-shadow .3s;text-decoration:none}
+.partner-signatures .partner-instagram-link .partner-instagram-icon{display:grid;place-items:center;width:32px;height:32px;flex:0 0 32px;border-radius:10px;background:linear-gradient(140deg,#a42441,#d3516a);box-shadow:0 3px 12px #c12d4426}
+.partner-signatures .partner-instagram-icon svg{width:19px;height:19px;opacity:1;color:#fff}
+.partner-signatures .partner-instagram-copy{display:block;min-width:0;text-align:left;letter-spacing:normal;text-transform:none}
+.partner-signatures .partner-instagram-copy strong{display:block;font:600 15px/1.25 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f9e9ee}
+.partner-signatures .partner-instagram-copy small{display:flex;align-items:center;gap:6px;font:500 9px/1.4 Inter,sans-serif;letter-spacing:.01em;text-transform:none;color:#d5a3b2;margin-top:5px;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#d5a3b266;white-space:nowrap}
+.partner-signatures .partner-instagram-copy small i{font-style:normal;font-size:12px;text-decoration:none}
+.partner-signatures .partner-instagram-link:hover{transform:translateY(-2px);border-color:#e48ca6;background:#3d1425cc;box-shadow:0 7px 22px #0003}
+.partner-signatures .partner-instagram-link:active{transform:scale(.975)}
+.partner-signatures .partner-instagram-link:focus-visible,.studio-instagram-link:focus-visible{outline:2px solid #f5d5df;outline-offset:5px}
+@media(min-width:761px) and (max-width:1100px){.agency-header-inner .agency-brand-name,.agency-header-inner .agency-desktop-nav{display:none}.agency-header-inner .agency-menu-button{display:flex}.agency-header-actions{gap:12px}}
+@media(max-width:760px){
+ .agency-header .agency-header-inner{display:grid;grid-template-columns:minmax(0,1fr) auto auto auto;column-gap:10px;row-gap:10px;padding:14px 20px 11px;align-items:center;position:relative}
+ .agency-header-inner>.agency-brand{grid-column:1;grid-row:1;justify-self:start}
+ .agency-header .agency-header-actions{display:contents}
+ .agency-header-actions .agency-prominent-login{grid-column:2;grid-row:1}
+ .agency-header-actions .agency-header-book{grid-column:3;grid-row:1;white-space:nowrap}
+ .agency-header-actions .agency-menu-button{grid-column:4;grid-row:1}
+ .agency-header .agency-header-actions .studio-instagram-link{grid-column:1/-1;grid-row:2;justify-self:center;max-width:100%;width:fit-content;min-height:34px;height:34px;padding:4px 12px 4px 5px!important;gap:8px}
+ .agency-header .studio-instagram-link .studio-instagram-icon{width:25px;height:25px;flex-basis:25px}
+ .agency-header .studio-instagram-link .studio-instagram-handle{font-size:10px;letter-spacing:.015em}
+ .agency-header .studio-instagram-link .studio-instagram-arrow{font-size:14px}
+ .agency-portrait-hero .agency-portrait-content{padding-top:150px}
+ .agency-portrait-hero .agency-portrait-pair{bottom:-1%}
+ .agency-root .partner-signatures,.studio-opening .partner-signatures,.partner-signatures .partner-signature-wrap{gap:12px}
+ .partner-signatures .partner-instagram-link{padding:10px 11px;gap:9px;min-height:57px;border-radius:12px}
+ .partner-signatures .partner-instagram-link .partner-instagram-icon{width:28px;height:28px;flex-basis:28px;border-radius:9px}
+ .partner-signatures .partner-instagram-icon svg{width:17px;height:17px}
+ .partner-signatures .partner-instagram-copy strong{font-size:13px;letter-spacing:.12em}
+ .partner-signatures .partner-instagram-copy small{font-size:9px;margin-top:4px}
+ .studio-opening-actions .studio-instagram-link.is-compact{width:36px;height:36px;padding:0!important}
+}
+@media(max-width:420px){
+ .agency-header .agency-header-inner{padding-inline:16px;column-gap:8px;row-gap:9px}
+ .agency-portrait-hero .agency-portrait-content{padding-top:152px}
+ .agency-root .partner-signatures,.studio-opening .partner-signatures,.partner-signatures .partner-signature-wrap{gap:8px}
+ .partner-signatures .partner-instagram-link{padding:9px;gap:7px;min-height:54px}
+ .partner-signatures .partner-instagram-link .partner-instagram-icon{width:25px;height:25px;flex-basis:25px;border-radius:8px}
+ .partner-signatures .partner-instagram-icon svg{width:16px;height:16px}
+ .partner-signatures .partner-instagram-copy strong{font-size:12px;letter-spacing:.11em}
+ .partner-signatures .partner-instagram-copy small{font-size:8px;gap:4px}
+}
+@media(max-height:500px){.studio-opening-partners .partner-instagram-link{padding:6px 9px;min-height:43px}.studio-opening-partners .partner-instagram-copy strong{font-size:11px}.studio-opening-partners .partner-instagram-copy small{font-size:7px;margin-top:3px}.studio-opening-partners .partner-instagram-icon{width:25px;height:25px;flex-basis:25px}}
+@media(prefers-reduced-motion:reduce){.partner-instagram-link,.studio-instagram-link,.studio-instagram-arrow{transition:none!important;animation:none!important}.partner-signatures .partner-instagram-link:hover,.partner-signatures .partner-instagram-link:active,.agency-header .agency-header-actions .studio-instagram-link:hover{transform:none}}

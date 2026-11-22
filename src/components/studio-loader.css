@@ -1,0 +1,20 @@
+/* Portfolio_series opening: studio card, wide blurred title, subtitle, portrait. */
+.agency-root .agency-header{transition:background .3s,border-color .3s,opacity .8s}
+.agency-root[data-opening-active="true"][data-opening-beat="0"] .agency-header,
+.agency-root[data-opening-active="true"][data-opening-beat="1"] .agency-header,
+.agency-root[data-opening-active="true"][data-opening-beat="2"] .agency-header,
+.agency-root[data-opening-active="true"][data-opening-beat="3"] .agency-header,
+.agency-root[data-opening-active="true"][data-opening-beat="4"] .agency-header{opacity:0;visibility:hidden;pointer-events:none}
+.agency-root[data-opening-active="true"]:not([data-opening-beat="5"]):not([data-opening-beat="6"]) .agency-portrait-actions{visibility:hidden;pointer-events:none}
+.agency-opening-studio{position:absolute;inset:0 0 auto;height:100svh;display:flex;align-items:center;justify-content:center;z-index:6;pointer-events:none;padding:0 24px;text-align:center}
+.agency-opening-studio p{font:600 clamp(9px,1vw,14px)/1.8 var(--font-sans);color:#b6b3b7}
+.agency-opening-projector{position:absolute;inset:0;pointer-events:none;background:radial-gradient(60% 50% at 50% 55%,rgba(229,19,43,.22),transparent 70%)}
+.agency-root .agency-title-word{display:block;white-space:nowrap;transform-origin:50% 50%;text-shadow:0 8px 40px #000c}
+.agency-root .agency-portrait-hero h1 .agency-portrait-subtitle{padding-left:.7em;text-shadow:0 2px 20px #000e}
+.agency-root[data-opening-beat="5"] .agency-portrait-actions .partner-signature-wrap{animation:mvm-intro-rise .8s cubic-bezier(.22,1,.36,1) both}
+.agency-root[data-opening-beat="5"] .agency-portrait-actions .partner-signature-wrap:nth-child(2){animation-delay:.1s}
+.agency-root[data-opening-beat="6"] .agency-hero-buttons>*{animation:mvm-intro-play .7s cubic-bezier(.22,1,.36,1) both}
+.agency-root[data-opening-active="true"]:not([data-opening-beat="6"]) .agency-hero-buttons{visibility:hidden}
+@keyframes mvm-intro-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes mvm-intro-play{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+@media(prefers-reduced-motion:reduce){.agency-root .agency-header{transition:none}.agency-opening-projector{display:none}.agency-root .agency-portrait-actions .partner-signature-wrap,.agency-root .agency-hero-buttons>*{animation:none!important}}

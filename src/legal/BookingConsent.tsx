@@ -1,0 +1,5 @@
+import type {LegalPublication} from './publicLegal';
+export default function BookingConsent({data,accepted,onAccepted,error}:{data:LegalPublication;accepted:boolean;onAccepted:(v:boolean)=>void;error:string}){
+ const version=data.revision?`?version=${data.revision}`:'';
+ return <div className="booking-legal-consent"><label className="studio-checkbox"><input type="checkbox" checked={accepted} disabled={!data.revision||Boolean(error)} onChange={event=>onAccepted(event.target.checked)}/><span>I accept the <a target="_blank" rel="noopener noreferrer" href={'/policies/terms'+version}>Terms</a>, <a target="_blank" rel="noopener noreferrer" href={'/policies/cancellations'+version}>Cancellation & refund policy</a> and <a target="_blank" rel="noopener noreferrer" href={'/policies/delivery'+version}>Delivery policy</a>, and have read the <a target="_blank" rel="noopener noreferrer" href={'/policies/privacy'+version}>Privacy notice</a>.</span></label><p>This does not opt you into WhatsApp promotions or give permission to publish private shoot content. A request alone does not reserve a slot.</p>{error&&<p role="alert">{error}</p>}</div>;
+}

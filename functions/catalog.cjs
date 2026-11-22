@@ -1,0 +1,13 @@
+const {onCall,HttpsError}=require('firebase-functions/v2/https');
+const {FieldValue}=require('firebase-admin/firestore');
+const {cleanProduct,cleanDistanceRules}=require('./catalog-domain.cjs');
+const {DEFAULT_STUDIO,validateStudio}=require('./studio-domain.cjs');
+module.exports=({db,identity,rateLimit,options})=>{
+ const api={};
+ const id=v=>{if(typeof v!=='string'||!/^[\w-]{1,128}$/.test(v))throw new HttpsError('invalid-argument','Invalid product ID');return v;};
+ function endpoint(name,key,handler){api[name]=onCall(options,async request=>{const a=await identity(request),m=(await require('./request-member.cjs').memberSnapshot(db,a)).data();if(!m?.active||!(m.owner||key!=='owner'&&m[key]))throw new HttpsError('permission-denied','You do not have permission for this action');await rateLimit(a.uid,name,15);try{return await handler(request.data??{},a);}catch(e){if(e instanceof HttpsError)throw e;throw new HttpsError('failed-precondition',e.message);}});}
+ endpoint('saveStudioProduct','servicesManage',async(data,a)=>{const ref=data.id?db.doc(`products/${id(data.id)}`):db.collection('products').doc(),product=cleanProduct(data);await db.runTransaction(async tx=>{tx.set(ref,{...product,updatedAtISO:new Date().toISOString()});tx.create(db.collection('operationsAudit').doc(),{actor:a.uid,action:'product.saved',id:ref.id,atISO:new Date().toISOString(),at:FieldValue.serverTimestamp()});tx.set(db.doc('operationsState/studio'),{updatedAt:FieldValue.serverTimestamp()});});return{id:ref.id};});
+ endpoint('archiveStudioProduct','servicesManage',async(data,a)=>{const ref=db.doc(`products/${id(data.id)}`);await db.runTransaction(async tx=>{tx.update(ref,{archived:true,published:false});tx.create(db.collection('operationsAudit').doc(),{actor:a.uid,action:'product.archived',id:ref.id,atISO:new Date().toISOString(),at:FieldValue.serverTimestamp()});tx.set(db.doc('operationsState/studio'),{updatedAt:FieldValue.serverTimestamp()});});return{saved:true};});
+ endpoint('saveDistancePricing','owner',async(data,a)=>{return db.runTransaction(async tx=>{const ref=db.doc('settings/studio'),current={...DEFAULT_STUDIO,...(await tx.get(ref)).data()};if(typeof data.enabled!=='boolean')throw new Error('Choose whether distance pricing is enabled');const next=validateStudio({...current,distancePricingEnabled:data.enabled,maximumTravelKm:data.maximumTravelKm,distanceRules:cleanDistanceRules(data.rules)});tx.set(ref,{...next,updatedAt:FieldValue.serverTimestamp()});tx.create(db.collection('operationsAudit').doc(),{actor:a.uid,action:'distance-pricing.updated',atISO:new Date().toISOString(),at:FieldValue.serverTimestamp()});tx.set(db.doc('operationsState/studio'),{updatedAt:FieldValue.serverTimestamp()});return{saved:true};});});
+ return api;
+};

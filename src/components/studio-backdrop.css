@@ -1,0 +1,13 @@
+/* Continuous photographic backdrop. The people and opening light are the composition. */
+.agency-root{background:#070709}
+.agency-root .agency-portrait-hero{background:#070709}
+.agency-root .agency-portrait-hero .agency-hero-glow{background:none;box-shadow:none}
+.agency-root .grain{inset:0;background-image:url('/assets/studio-grain.png');background-size:128px 128px;opacity:.022;animation:none;transform:none}
+.agency-root .agency-header{background:#070709ed}
+.agency-root .agency-header.is-solid{background:#070709f5;border-bottom-color:#e2c5d014}
+.agency-root .mvm-reel-showcase,.agency-root .managed-brands{background:#070709}
+.agency-root .mvm-reel-showcase:before,.agency-root .managed-brands:before{background:none}
+.agency-root .agency-studio-section{background:#09090c}
+.agency-root .agency-start-section,.agency-root .agency-footer{background:#070709}
+.agency-root .agency-portrait-window .agency-portrait-scene{background:#070709}
+.agency-root .agency-portrait-window .agency-portrait-pair{mix-blend-mode:lighten}

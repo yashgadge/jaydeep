@@ -1,0 +1,21 @@
+const fs=require('node:fs');
+const ts=require('typescript');
+const assert=require('node:assert/strict');
+const code=ts.transpileModule(fs.readFileSync('src/components/reelWheel.ts','utf8'),{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2020}}).outputText;
+const exportsObject={};new Function('exports',code)(exportsObject);
+const {createReelWheelState,routeReelWheel}=exportsObject;
+const input=(deltaY,extra={})=>({deltaX:0,deltaY,deltaMode:0,cancelable:true,...extra});
+let checks=0;
+function check(name,fn){fn();checks++;console.log('PASS '+name);}
+check('Slow isolated wheel notches browse reels in both directions',()=>{const s=createReelWheelState();for(const [at,dy] of [[0,100],[700,100],[1400,-100]]){const r=routeReelWheel(s,input(dy),at,753);assert.equal(r.route,'reel');assert.equal(r.step,Math.sign(dy));}});
+check('Rapid mouse-wheel burst releases page scrolling',()=>{const s=createReelWheelState();assert.equal(routeReelWheel(s,input(180),0,753).route,'reel');assert.equal(routeReelWheel(s,input(180),35,753).route,'reel');assert.equal(routeReelWheel(s,input(180),70,753).route,'page');});
+check('Fast upward wheel releases page scrolling',()=>{assert.equal(routeReelWheel(createReelWheelState(),input(-400),0,753).route,'page');});
+check('Flick momentum remains page scrolling until gesture ends',()=>{const s=createReelWheelState();for(const [at,dy] of [[0,400],[30,50],[90,9],[180,2],[300,1]])assert.equal(routeReelWheel(s,input(dy),at,753).route,'page');assert.equal(routeReelWheel(s,input(55),650,753).route,'reel');});
+check('Gentle trackpad motion stays in reels',()=>{const s=createReelWheelState();let moved=false;for(let at=0;at<240;at+=8){const r=routeReelWheel(s,input(2),at,753);assert.equal(r.route,'reel');moved ||= r.step!==0;}assert.ok(moved);});
+check('Accelerating trackpad motion releases page',()=>{const s=createReelWheelState();let released=false;for(let at=0;at<120;at+=8)released ||= routeReelWheel(s,input(48),at,753).route==='page';assert.ok(released);});
+check('Intentional horizontal trackpad swipes remain reel browsing',()=>{assert.equal(routeReelWheel(createReelWheelState(),input(2,{deltaX:500}),0,753).route,'reel');});
+check('Line and page units normalize correctly',()=>{assert.equal(routeReelWheel(createReelWheelState(),input(3,{deltaMode:1}),0,753).route,'reel');assert.equal(routeReelWheel(createReelWheelState(),input(20,{deltaMode:1}),0,753).route,'page');assert.equal(routeReelWheel(createReelWheelState(),input(1,{deltaMode:2}),0,753).route,'page');});
+check('Zoom and uncancelable events are untouched',()=>{for(const extra of [{ctrlKey:true},{metaKey:true},{cancelable:false}])assert.equal(routeReelWheel(createReelWheelState(),input(500,extra),0,753).route,'ignore');});
+check('Slow direction changes do not produce false flicks',()=>{const s=createReelWheelState();for(const [at,dy] of [[0,80],[50,-80],[100,80]])assert.equal(routeReelWheel(s,input(dy),at,753).route,'reel');});
+check('Moderately fast normal wheel scrolling stays in reels',()=>{const s=createReelWheelState();for(const at of [0,90,180,270])assert.equal(routeReelWheel(s,input(150),at,753).route,'reel');});
+console.log(`${checks} gesture checks passed.`);

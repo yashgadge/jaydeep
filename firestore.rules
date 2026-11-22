@@ -1,0 +1,61 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null
+        && exists(/databases/$(database)/documents/sessions/$(request.auth.uid))
+        && get(/databases/$(database)/documents/sessions/$(request.auth.uid)).data.expiresAtMs > request.time.toMillis()
+        && get(/databases/$(database)/documents/sessions/$(request.auth.uid)).data.authTime == request.auth.token.auth_time * 1000;
+    }
+    function isMember() { return signedIn() && request.auth.token.firebase.sign_in_provider == 'password' && exists(/databases/$(database)/documents/members/$(request.auth.uid)); }
+    function member() { return get(/databases/$(database)/documents/members/$(request.auth.uid)).data; }
+    function billingAdmin() { return isMember() && member().active == true && (member().owner == true || member().invoiceManage == true); }
+    function owner() { return isMember() && member().active == true && member().owner == true; }
+    function permitted(key) { return isMember() && member().active == true && (member().owner == true || member().get(key, false) == true); }
+
+    match /members/{uid} {
+      allow read: if signedIn() && (request.auth.uid == uid || owner());
+      allow write: if false;
+    }
+    match /settings/invoicing {
+      allow read: if billingAdmin();
+      allow write: if false;
+    }
+    match /orders/{id} {
+      // Client orders are returned by the scoped callable, which strips internal agreed values.
+      allow read: if billingAdmin();
+      allow write: if false;
+    }
+    match /invoices/{id} {
+      allow read: if billingAdmin() || (signedIn() && resource.data.clientUid == request.auth.uid);
+      allow write: if false;
+    }
+    match /financialDocuments/{id} {
+      allow read: if billingAdmin() || permitted('paymentsManage') || (signedIn() && resource.data.clientUid == request.auth.uid);
+      allow write: if false;
+    }
+    match /invoiceAudit/{id} {
+      allow read: if owner();
+      allow write: if false;
+    }
+    match /contacts/{id} { allow read: if permitted('contactsManage'); allow write: if false; }
+    match /settings/whatsapp { allow read: if permitted('whatsappSend'); allow write: if false; }
+    match /payments/{id} { allow read: if permitted('paymentsManage'); allow write: if false; }
+    match /whatsappJobs/{id} { allow read: if permitted('whatsappSend'); allow write: if false; }
+    match /whatsappUsage/{id} { allow read: if permitted('whatsappSend'); allow write: if false; }
+    match /operationsAudit/{id} { allow read: if owner(); allow write: if false; }
+    match /operationsState/{kind} {
+      allow read: if (kind == 'studio' && signedIn()) || (kind == 'contacts' && (permitted('contactsManage') || permitted('clientsExport') || permitted('whatsappSend')))
+        || (kind == 'payments' && (permitted('paymentsManage') || permitted('invoiceManage')))
+        || (kind == 'orders' && permitted('paymentsManage'))
+        || (kind == 'whatsappJobs' && permitted('whatsappSend'));
+      allow write: if false;
+    }
+    match /publicServices/{id} { allow read: if resource.data.published == true && resource.data.archived == false; allow write: if false; }
+    match /publicContent/{id} { allow read: if resource.data.published == true; allow write: if false; }
+    match /publicWebsite/live { allow read: if true; allow write: if false; }
+    match /publicWebsite/legal { allow read: if true; allow write: if false; }
+    match /publicLegalVersions/{revision} { allow read: if true; allow write: if false; }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

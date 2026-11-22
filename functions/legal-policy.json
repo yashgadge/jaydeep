@@ -1,0 +1,216 @@
+{
+  "version": "2026-11-19-v3",
+  "effectiveDate": "2026-11-19",
+  "pages": [
+    {
+      "id": "terms",
+      "title": "Terms & conditions",
+      "summary": "How we agree a brief, confirm a booking and work together.",
+      "sections": [
+        {
+          "title": "Who these terms cover",
+          "body": "Maharashtra Vision Media provides photography, videography, editing, content creation and social media management services. The business operator and contact details are listed on the Contact & grievances page. These terms apply to website use and service requests. The agreed quotation, scope, booking record and applicable policy version form the service agreement. Mandatory consumer rights always apply; an individual brief cannot remove them."
+        },
+        {
+          "title": "Eligibility and account access",
+          "body": "Bookings and service agreements must be made by someone aged 18 or over who has authority to act for the client or business. A parent or guardian must arrange work involving a minor. Use accurate details. Clients use their own Google account; authorised staff use their separate email-and-password account for the Admin and On the go dashboards. Keep your account secure, sign out on shared devices and report unfamiliar activity. Google sign-in identifies an account; it does not by itself confirm a booking, payment or promotional-message consent."
+        },
+        {
+          "title": "Requests and confirmed bookings",
+          "body": "Submitting an enquiry or preferred date is a request, not a reserved slot. A booking is confirmed only when the website or studio explicitly confirms it and any agreed advance requirement has been met. Morning (8 AM–12 PM), afternoon (12–4 PM), evening (4–8 PM) and night (8 PM–1 AM the following day), all in IST, are broad scheduling slots, not exact arrival times; the studio and client must agree the actual reporting time, coverage and access arrangements. Availability, crew capacity, travel eligibility and the agreed scope apply. Do not rely on an unconfirmed request for an event-critical commitment."
+        },
+        {
+          "title": "Scope, pricing and changes",
+          "body": "The accepted plan must identify deliverables, quantities, coverage, location, price, advance, delivery estimate and included revisions. Prices are in Indian rupees. Taxes, travel, permits, advertising spend, platform charges and third-party costs must be identified in the quotation if applicable; unquoted extras require agreement. Quote-only packages have no fixed price until agreed. Additional coverage, reshoots, raw files, project files or extra revisions are included only if expressly agreed. Scope changes can change the price and timetable, subject to your approval."
+        },
+        {
+          "title": "Payments and documents",
+          "body": "Use only payment methods actually offered by the studio. Online payment availability depends on the connected provider. Offline payments are recorded after receipt and verification. An invoice records the amount billed; a receipt records money actually received. An advance receipt and a final receipt are separate records of payments, not duplicate charges. If an authorised payment bypass is used, the recorded billed amount is zero and no payment receipt is created for money that was not collected. A zero-value bypass must not be represented as a paid order. Do not pay an unexpected request without checking it through the studio’s official contact channel."
+        },
+        {
+          "title": "Shoot arrangements and safety",
+          "body": "Agree the venue, reporting time, access, permissions, contacts and essential shots before the shoot. Tell us about restrictions, sensitive subjects and any participants who should not be photographed. Both the studio and client must obtain the permissions that apply to their own activities; booking a shoot does not waive a participant’s privacy or image rights. Guardian permission is needed where required for children. Unsafe, unlawful or prohibited work may be paused while a safe alternative is arranged. Any resulting costs or cancellation must be assessed fairly under the agreed scope and applicable law."
+        },
+        {
+          "title": "Social media and advertising work",
+          "body": "Monthly management work requires an agreed term, deliverables, posting/approval process, renewal price and advertising budget. A request for management does not start an automatic subscription or debit. Give access through official business-role tools where possible; do not put passwords, OTPs or payment-card details in booking notes. Clients must review factual, price, offer and regulated claims before approving publication. The studio remains responsible for its own work. Reach, followers, leads, sales, platform approval and ad results cannot be guaranteed. Platform outages and restrictions should be communicated and handled through an agreed plan."
+        },
+        {
+          "title": "Delivery, copyright and publicity",
+          "body": "The Delivery & content rights policy explains delivery links, revisions, permissions and use of work. Copyright ownership, assignments and licences follow applicable law and any valid written agreement; this website does not declare that the studio automatically owns all commissioned photographs or films. Third-party music, fonts, stock and platform licences can restrict reuse. Client work must not be used for the studio’s public marketing merely because a booking was made: appropriate separate permission or another valid right to publish is required."
+        },
+        {
+          "title": "Cancellations, service issues and fair remedies",
+          "body": "The Cancellation & refund policy and the booking-specific change rules apply. Contact the studio promptly if work, a payment or a delivery is incorrect. The parties should first seek a fair remedy, such as correction, an agreed reshoot, replacement delivery or an appropriate refund. Nothing here excludes remedies for deficient service, unlawful conduct or other rights that cannot legally be excluded. There is no blanket waiver of all liability and no requirement to give up a lawful consumer complaint."
+        },
+        {
+          "title": "Website use and third parties",
+          "body": "Do not impersonate others, access another client’s documents, misuse contact data, upload unlawful material or interfere with the website. Instagram, Google, Drive and any payment provider operate their own services and terms. Linking to or embedding a service does not make every external service feature available through this website. No website can promise uninterrupted access; retain copies of important confirmations and downloaded deliverables."
+        },
+        {
+          "title": "Policy changes and disputes",
+          "body": "Material changes apply prospectively. A new version does not silently rewrite an existing booking; changes to an agreed job require an appropriate agreement. Keep the version link supplied with your booking. Indian law applies to the extent applicable. Courts, consumer commissions and other competent authorities retain the jurisdiction given to them by law; these terms do not force a consumer to surrender a statutory forum. Use the Contact & grievances page for help or a formal complaint."
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "title": "Privacy policy",
+      "summary": "What information we use, why we need it and how to request help.",
+      "sections": [
+        {
+          "title": "Who handles your information",
+          "body": "Maharashtra Vision Media handles information supplied through this website and for its services. The public business and grievance contacts are on the Contact & grievances page. This notice describes current practices, not a claim of certification or a guarantee that every legal obligation has been completed. Applicable Indian privacy and data-protection requirements, including provisions as they come into force, remain relevant."
+        },
+        {
+          "title": "Information you provide",
+          "body": "Google sign-in supplies account identity information such as a name, email and user identifier. The website may store your contact number, profile preferences, booking type, date and slot, venue/address, location coordinates when used, requirements, quantities, business/Instagram details, enquiries, approvals, revision messages and delivery links. Billing records can include your name, address, order details, amounts, payment references, receipts and refund records. Do not enter passwords, OTPs, complete card details, government identity numbers, health details or other unnecessary sensitive information in free-text fields. Staff sign-in uses email and password through Firebase Authentication; passwords are not stored in client records or order notes."
+        },
+        {
+          "title": "Why we use it",
+          "body": "We use information to authenticate accounts, prepare quotations, arrange work, check availability and travel eligibility, communicate about requests, deliver content, manage approvals, keep accounts, resolve complaints and protect against misuse. Legal or accounting records may need to be retained. Optional WhatsApp service updates and promotional messages have separate preferences. Agreeing to booking terms does not subscribe you to promotions. We do not offer client contact data for sale."
+        },
+        {
+          "title": "Location and address tools",
+          "body": "If enabled, address search sends your query to Google for suggestions; selecting a result can obtain an address and coordinates for travel checks. Current location is requested only after you choose that feature and your browser permits it. Manual address entry is available when enabled by the studio. Refusing location permission does not give us permission to track you in the background. Do not send an address unless it is needed for the job. Availability checks may consider distance and minimum order requirements."
+        },
+        {
+          "title": "Suppliers and external content",
+          "body": "Google/Firebase provides hosting, authentication, database, security and document storage services. Google Fonts and reCAPTCHA/App Check can receive network and device information when used. Instagram/Meta receives information when you load an embedded reel or visit a linked profile. Google Maps, WhatsApp/Meta and a payment provider receive information when their respective features are used. Drive links and Instagram profiles are external services. Providers may process data on infrastructure outside India subject to their practices and applicable restrictions. We share with authorised team members and service providers only as needed for the work, operations or legal obligations."
+        },
+        {
+          "title": "Payments and WhatsApp",
+          "body": "The website stores payment records and references, rather than intentionally collecting full payment-card numbers or CVVs in booking fields. Use a provider’s secure payment interface if online payments are enabled. WhatsApp preferences for order updates and promotions are separate and optional. Change them in My profile, or use the studio’s opt-out channel. Replying STOP blocks further messages through the messaging workflow; reply START if you want to resume after an opt-out. Opting out does not cancel a shoot or remove an invoice. Manually adding a phone number is not promotional consent."
+        },
+        {
+          "title": "Photos, videos and account separation",
+          "body": "Shoot media can contain personal information about clients and participants. Agree on sensitive situations and participant permissions before recording. A client’s portal is scoped to their account, but an external Drive link may be usable by others if its sharing settings permit it. The studio must choose appropriate Drive permissions and you should avoid forwarding private links. Separate publication permission is needed for marketing use where required; signing in or accepting these terms is not a model release."
+        },
+        {
+          "title": "Storage, retention and deletion requests",
+          "body": "Orders, bills and payment records remain in account history and operational storage unless a retention or deletion request is processed; some records must be kept for legal, accounting, fraud prevention or dispute purposes. Shoot files and their availability follow the agreed delivery/retention arrangement; the portal is not a promise of permanent media hosting. Keep your own downloaded copies. Backups rotate separately from live records, so deletion may not immediately remove every backup copy. We do not promise that erasure of a profile deletes legally required invoices or content another recipient has already downloaded."
+        },
+        {
+          "title": "Your requests and choices",
+          "body": "You may ask the studio about your information, request correction, access or deletion where applicable, withdraw an optional permission, raise a concern or exercise applicable privacy rights. Use the Contact & grievances channel with your client/order ID and the nature of the request. We may need proportionate identity checks before disclosing or changing private records; do not email passwords or OTPs. We will explain any lawful reason that prevents immediate deletion or fulfilment. There is no automatic account-erasure button in this version; requests are handled by the studio."
+        },
+        {
+          "title": "Children and security",
+          "body": "An adult must make the booking. Work involving children requires appropriate guardian arrangements and permissions; do not submit a child’s personal details unless necessary and authorised. Access controls, Google authentication, server permission checks and backups help protect records, but no system can guarantee absolute security. Report a suspected leak or wrong delivery link promptly through the grievance channel. The studio will assess incidents and take notification or remedial steps required by applicable law."
+        },
+        {
+          "title": "Updates to this notice",
+          "body": "The effective date and policy version are shown on this page. Material changes will be reflected in a new version. The version recorded against a booking remains available. See Cookies & external services for device storage and embedded content."
+        }
+      ]
+    },
+    {
+      "id": "cancellations",
+      "title": "Cancellations & refunds",
+      "summary": "Clear changes, fair deductions and traceable refunds.",
+      "sections": [
+        {
+          "title": "Which rules apply to your shoot",
+          "body": "Review the cancellation notice period, applicable cancellation fee, rescheduling notice and number of included reschedules shown below and in your booking before confirming. Those settings are captured with the order. Later studio setting changes do not replace that snapshot. A service quotation may offer more favourable arrangements. Mandatory consumer remedies are not restricted by this policy."
+        },
+        {
+          "title": "How to request a change",
+          "body": "Use My shoots to request a cancellation or a new date/slot when the option is available. A change request does not itself move or cancel a confirmed shoot; wait for the studio’s response. If a request is within the website’s change deadline, a limit has been reached, the button is unavailable or the event is urgent, contact the studio directly for review. Do not assume a request is rejected solely because a self-service option is unavailable. A new date requires actual crew and slot availability."
+        },
+        {
+          "title": "Client cancellation and advances",
+          "body": "An advance is not automatically non-refundable in every circumstance. The studio must explain any applicable cancellation fee and any agreed, evidenced work or non-recoverable expense before settling a refund. Deductions must be lawful, fair and connected to the agreement; they must not exceed the amount properly due. Do not deduct the same cost twice. Service defects, non-delivery and other statutory refund rights are assessed separately from a voluntary cancellation. A missed shoot is not permission for an unexplained forfeiture of every payment."
+        },
+        {
+          "title": "Studio cancellation, weather and disruptions",
+          "body": "If the studio cancels without client fault and cannot provide an acceptable alternative, refund amounts paid for services not supplied. Where cancellation charges apply to the client, corresponding obligations for a unilateral studio cancellation apply as required by law. If weather, venue restrictions, illness or another serious disruption prevents safe work, discuss a reasonable reschedule or other remedy promptly. Work already performed and genuine third-party costs must be considered transparently; these events do not automatically eliminate legal refund rights."
+        },
+        {
+          "title": "Refund handling",
+          "body": "A refund request is reviewed against the order, payments and reason. The studio aims to acknowledge complaints within 48 hours and resolve them within one month, or any shorter period required by applicable law. Once a refund is accepted, we aim to initiate it within 7 working days unless a shorter legal or payment-provider deadline applies. We will explain delays and provide the refund reference where available. Bank/provider settlement can take additional time. Use the original method where feasible or another method agreed with the verified payer. An online request or a refund record does not by itself mean that money has been transferred."
+        },
+        {
+          "title": "No-charge orders, duplicate payments and disputes",
+          "body": "For a payment-bypass order billed at zero, no refund is due for a payment that was never collected. Genuine offline money received must still be recorded and assessed. Report duplicate or incorrect charges promptly with your order/payment reference. Lawful chargeback, consumer complaint and other dispute rights remain available. Never provide a password, OTP or UPI PIN to receive a refund."
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "title": "Delivery & content rights",
+      "summary": "Deliverables, revisions, safe links and permission to share.",
+      "sections": [
+        {
+          "title": "Deliverables and delivery estimates",
+          "body": "Your agreed plan or confirmed brief sets the coverage, edited photo/video/reel quantities, formats, included revisions and delivery estimate. Exact timing depends on the agreed brief, shoot completion and required client inputs. The studio should communicate delays and a revised estimate. Raw captures, editable project files, unused footage, additional edits and reshoots are included only when specifically agreed. Do not assume that a sample reel promises identical lighting, weather, venue access or results."
+        },
+        {
+          "title": "How content is delivered",
+          "body": "The studio may provide separate photo and video Drive links through your client account. Check the recipient and link permissions before sharing. Download and back up your delivered files promptly. An order record and invoice can remain in the portal while an external file/link is later changed, expires or is removed according to an agreed retention arrangement. Unless permanent storage is explicitly agreed, this service is not a lifetime backup product. Contact the studio if a link is broken or appears to expose someone else’s work."
+        },
+        {
+          "title": "Review and revisions",
+          "body": "Use the order’s revision-request option for the included number of revisions, with clear, consolidated feedback. Revisions concern the agreed scope; a new concept, additional shoot, extra quantities or changed brief requires an agreed quotation. Report missing, damaged or incorrectly supplied files even if the revision allowance is exhausted. A technical revision limit does not remove remedies for defective or non-conforming service. Any review deadline or additional charge must be disclosed in the brief rather than assumed from silence."
+        },
+        {
+          "title": "Ownership and licences",
+          "body": "Copyright ownership, permitted commercial use and any assignment follow applicable law and the valid written agreement for that job. Where applicable law gives a commissioning client rights by default, these website terms do not silently reverse that rule. Clarify ownership and intended use before work begins. The studio and client each retain rights in their pre-existing materials. Licensed music, stock, fonts, templates, platform audio and other third-party material remain subject to their own licences; content cleared for a social platform may require different clearance for advertising or other uses."
+        },
+        {
+          "title": "Public portfolio and participant permission",
+          "body": "A booking, payment or Google sign-in is not permission to use private client work, faces or testimonials for advertising. Obtain a separate, specific permission or another valid right before publication, identifying the intended use where appropriate. Permission for an Instagram post does not necessarily cover every future campaign. The client’s approval cannot override another participant’s rights. Obtain appropriate guardian permission for children. You may contact the grievance channel about a privacy, copyright or publication concern; we will assess the request and applicable rights."
+        },
+        {
+          "title": "Advertising approvals and confidential access",
+          "body": "For managed social accounts, agree who approves content, response times, posting access and who can authorise ad spend. Keep confidential business information out of public briefs. Use platform role invitations rather than sharing personal passwords where possible. Account access should be removed when the work ends. No permission to reuse a client list or publish private messages is implied by a management contract."
+        }
+      ]
+    },
+    {
+      "id": "cookies",
+      "title": "Cookies & external services",
+      "summary": "Sign-in storage, security checks and optional embedded media.",
+      "sections": [
+        {
+          "title": "Website storage and security",
+          "body": "Google/Firebase and your browser may use cookies, local storage or similar technology to maintain sign-in, security state and service operation. App Check/reCAPTCHA is used for abuse prevention. Blocking required storage can prevent sign-in or protected features from working. Your browser can clear site data; clearing it can sign you out but does not delete server-side orders or invoices."
+        },
+        {
+          "title": "Fonts and infrastructure",
+          "body": "The website uses Google Fonts and Firebase-hosted resources. Requests can disclose network information, such as your IP address and browser/device information, to the provider. This version does not intentionally enable an optional advertising-analytics tracker or a Google Analytics dashboard. That statement does not mean that an external platform has no analytics of its own."
+        },
+        {
+          "title": "Instagram and other embedded content",
+          "body": "Reel cards initially display covers hosted with the website. Before an Instagram player is loaded, you can choose whether to allow it for the current visit. Loading an embed connects to Meta/Instagram and can involve its cookies, network data, playback measurements and logged-in account state under its policies. You can instead open Instagram directly, in which case that external site’s rules apply. Closing a player removes it from the page; it does not erase information already received by that provider."
+        },
+        {
+          "title": "Maps, messaging and payments",
+          "body": "Address suggestions, current location, Maps views, WhatsApp links and payment interfaces contact their respective providers when enabled and used. Browser location permission is separate from a message opt-in or accepting booking terms. Manual address entry is available when enabled. Do not enter private information into a third-party tool unless needed for the service and you understand its purpose."
+        },
+        {
+          "title": "Your controls",
+          "body": "You can decline optional Instagram embeds, close a loaded player, manage WhatsApp preferences in your account, use browser privacy controls and choose not to open external links. Declining an Instagram embed does not stop you from browsing packages or making a booking. Essential authentication and security processing cannot be switched off through an optional-media preference without affecting the relevant service. Contact the studio if you need an alternative way to access content."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "Contact & grievances",
+      "summary": "Business identity, service complaints and privacy requests.",
+      "sections": [
+        {
+          "title": "Contact the studio",
+          "body": "Use the published business and grievance details below for order questions, billing corrections, delivery problems, cancellation/refund requests, privacy requests or concerns about published media. Include your client/order/payment ID if available and explain the outcome you are seeking. You do not need to publish your complaint on social media or share a password to receive help."
+        },
+        {
+          "title": "Complaint handling",
+          "body": "The studio aims to acknowledge a consumer complaint within 48 hours and resolve it within one month, subject to any shorter applicable legal requirement. Privacy requests are handled within applicable legal timelines with proportionate identity checks. If more information or time is needed, the studio should explain the reason and next step. A request for deletion may not remove records that must be retained for accounting, a legal obligation or an active dispute."
+        },
+        {
+          "title": "Other remedies",
+          "body": "Contacting the studio does not remove your right to use a competent consumer commission, court, regulator or another lawful complaint route. Consumer assistance is also available through India’s National Consumer Helpline at consumerhelpline.gov.in. Use the official service directly and avoid sharing OTPs, passwords or UPI PINs with anyone claiming to arrange a refund."
+        }
+      ]
+    }
+  ]
+}

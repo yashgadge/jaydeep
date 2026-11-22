@@ -1,0 +1,7 @@
+rules_version = '2';
+service firebase.storage {
+ match /b/{bucket}/o {
+  // Financial PDFs are immutable private server archives. Authenticated download is a callable.
+  match /{path=**} { allow read, write: if false; }
+ }
+}

@@ -1,0 +1,22 @@
+.route-page { min-height:100dvh; isolation:isolate; }
+.route-page[data-theme=light], html[data-route-theme=light], html[data-route-theme=light] body { background:#f5f5f8; }
+.page-transition { position:fixed; inset:0; z-index:100000; overflow:hidden; isolation:isolate; cursor:progress; touch-action:none; pointer-events:auto; }
+.page-transition-surface { position:absolute; inset:0; width:100%; height:100%; overflow:hidden; pointer-events:none; }
+.page-transition { view-transition-name:mvm-route-wash; }
+html.mvm-route-handoff::view-transition-group(root),html.mvm-route-handoff::view-transition-group(mvm-route-wash){animation:none}
+html.mvm-route-handoff::view-transition-group(mvm-route-wash){z-index:1}
+html.mvm-route-handoff::view-transition-old(root){animation:mvm-route-out .7s cubic-bezier(.22,1,.36,1) both;mix-blend-mode:normal}
+html.mvm-route-handoff::view-transition-new(root){animation:mvm-route-in .7s cubic-bezier(.22,1,.36,1) both;mix-blend-mode:normal}
+html.mvm-route-handoff::view-transition-old(mvm-route-wash){display:none}
+html.mvm-route-handoff::view-transition-new(mvm-route-wash){animation:mvm-route-out .7s cubic-bezier(.22,1,.36,1) both;mix-blend-mode:normal}
+@keyframes mvm-route-out{from{opacity:1}to{opacity:0}}
+@keyframes mvm-route-in{from{opacity:0}to{opacity:1}}
+
+
+.page-transition-caption { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; opacity:0; transition:opacity .22s ease; color:#61535d; pointer-events:none; }
+.page-transition-caption.is-visible { opacity:1; }
+.page-transition-caption>span { font:500 13px/1.5 Inter,sans-serif; }
+.page-transition-caption i { height:1px; width:48px; background:#b92040; opacity:.45; }
+.route-loading { min-height:100dvh; background:#f5f5f8; display:grid; place-content:center; color:#3a3038; font:500 14px Inter,sans-serif; }
+.page-transition-error { position:fixed; z-index:100001; bottom:24px; left:50%; transform:translateX(-50%); padding:16px 24px; background:#faf7f5; color:#512632; border-radius:12px; box-shadow:0 8px 30px #0003; }
+@media(prefers-reduced-motion:reduce) { .page-transition { display:none; } .page-transition-caption { transition:none; } }
